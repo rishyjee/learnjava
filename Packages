@@ -1,0 +1,89 @@
+//Over Here we are going to discuss a program user defined package:--->
+//Let's see the first package:-
+// Each three block(Separated by ***) which is shown below, you have to write in different tab. Not continuously!!!!
+
+package package1;
+
+public class A
+
+{
+
+public void displayA()
+
+{
+
+System.out.println("This is Class A");
+
+}
+
+}
+
+*****************************************************************************
+//Now let's go for Second package:-
+
+package package2;
+
+public class B
+
+{
+
+protected int m=10;
+
+public void displayB()
+
+{
+
+System.out.println("This is Class B");
+
+System.out.println("m="+m);
+
+}
+
+}
+
+****************************************************************************
+
+import package1.A;//Here we are importing our first package, which we have defined earlier.
+
+import package2.*;// Here we are importing our second package, and that package whatever class is defined we can access it.
+
+class Test
+
+{
+
+public static void main(String args[])
+
+{
+
+A objA=new A();
+
+B objB=new B();
+
+objA.displayA();
+
+objB.displayB();
+
+}
+
+}
+
+********************************************************************************
+
+
+Output:--->//Here compilation and run :-> before doing this we have to make sure that all of the packages must be compiled. 
+
+lenovo@lenovo-ThinkCentre-M71e:~$ cd Desktop
+
+lenovo@lenovo-ThinkCentre-M71e:~/Desktop$ cd Program
+
+lenovo@lenovo-ThinkCentre-M71e:~/Desktop/Program$ javac Test.java
+
+lenovo@lenovo-ThinkCentre-M71e:~/Desktop/Program$ java Test
+
+This is Class A
+
+This is Class B
+
+m=10
+
+lenovo@lenovo-ThinkCentre-M71e:~/Desktop/Program$
